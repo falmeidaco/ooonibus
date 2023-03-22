@@ -1,0 +1,374 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Comic Sans", Helvetica, Arial, sans-serif;
+  color: white;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.landscape {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #033fff;
+  overflow: hidden;
+  text-align: center;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+.landscape p {
+  font-size: 1.5rem;
+  letter-spacing: 0.4px;
+}
+.landscape p span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.bumber {
+  position: absolute;
+  bottom: 0;
+  width: 110%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+.bumber:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: #efeaea;
+  border-radius: 10px 10px 10px 0;
+}
+.bumber:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: #efeaea;
+  border-radius: 10px 5px 0px 10px;
+}
+
+.car {
+  animation: run 0.5s ease-in infinite;
+  background: #ff1f5a;
+  border-radius: 30px 30px 8px 8px;
+  width: 120px;
+  height: 80px;
+  position: relative;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  transform: skewX(-5deg);
+}
+.car:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+  display: block;
+  background-color: #000000;
+  width: 105%;
+  height: 5px;
+  border-bottom-left-radius: 50px;
+}
+.car:after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  height: 2px;
+  width: 10px;
+  display: block;
+  background-color: #ece8d9;
+}
+.car .music {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.car .music .note {
+  color: white;
+  animation: music 3s linear infinite;
+  position: absolute;
+}
+.car .music .note.delay-1 {
+  animation-delay: 1s;
+}
+.car .music .note.delay-2 {
+  animation-delay: 2s;
+}
+.car .music .note.delay-3 {
+  animation-delay: 3s;
+}
+.car .decoration {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  background-color: #edf9fc;
+  border-radius: 16px 20px 0px 0;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+.car .decoration .doors {
+  height: 60%;
+  width: 96%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  position: relative;
+  top: 6px;
+}
+.car .decoration .doors .door {
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: #0839d6;
+  border-radius: 8px 8px 4px 4px;
+  margin: 0 2px;
+  overflow: hidden;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.car .decoration .doors .door:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: 2px;
+}
+.car .decoration .doors .door:before {
+  content: "";
+  display: block;
+  width: 4%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.car .decoration .doors .door.cabin {
+  border-radius: 8px 0 0 4px;
+  margin-right: 0;
+  width: 100px;
+}
+.car .light {
+  width: 4px;
+  height: 8px;
+  border-radius: 100px;
+  background: white;
+  position: absolute;
+  right: 2px;
+  bottom: 20px;
+}
+.car .wheels-group {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.car .wheels-group .wheel {
+  width: 40px;
+  height: 20px;
+  background-color: #000000;
+  animation: wheel-scale 0.5s ease-in infinite;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.car .wheels-group .wheel:before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #45315d;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  top: 80%;
+}
+.car .wheels-group .wheel:after {
+  width: 22px;
+  height: 22px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #edf9fc;
+  content: "";
+  position: absolute;
+  top: 48%;
+  border: 6px solid #312046;
+  box-sizing: border-box;
+}
+
+.mountains {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: -30px;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+.mountains .mountain {
+  background: #2c3adb;
+  animation: mountain-run 10s ease-in infinite;
+  position: relative;
+  right: 9999px;
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper {
+  width: 18vw;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapper:after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #45315d;
+  position: absolute;
+  bottom: -20px;
+}
+.wrapper:before {
+  content: "";
+  height: 2px;
+  width: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  animation: road-run 0.5s ease-in infinite;
+  z-index: 2;
+}
+
+@keyframes run {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 4px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes wheel-scale {
+  0% {
+    transform: scaleX(0.7);
+  }
+  50% {
+    transform: scaleX(0.9);
+    height: 20px;
+  }
+  100% {
+    transform: scaleX(0.7);
+  }
+}
+@keyframes mountain-run {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes road-run {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes music {
+  0% {
+    font-size: 0.5rem;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: -50px;
+    margin-left: -100px;
+    font-size: 1rem;
+    opacity: 0;
+  }
+}

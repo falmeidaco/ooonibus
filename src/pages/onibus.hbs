@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onibus Vem Aí</title>
+    <style>
+      .wrapper{cursor: pointer;}
+      .s0, .s1 {display:none;}
+      button {
+        position:relative;
+        border-radius:4px;
+        background-color:white;
+        color:blue;
+        font-weight:700;
+        padding:10px;
+        margin-top:10px;
+        font-size:1rem;
+        border:none;
+      }
+      .car .music,.landscape{top:0;position:absolute}.bumber,.car .decoration,.car .light,.car .music,.car .music .note,.car:after,.car:before,.landscape{position:absolute}body,html{height:100%;margin:0}body{font-family:"Comic Sans",Helvetica,Arial,sans-serif;color:#fff;-webkit-flex-direction:column;-moz-flex-direction:column;flex-direction:column;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;-webkit-align-items:center;-moz-align-items:center;align-items:center;font-size:16px}.landscape{height:50vh;width:100%;z-index:-1;background-color:#033fff;overflow:hidden;text-align:center;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-flex-direction:column;-moz-flex-direction:column;flex-direction:column;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center}.landscape p{font-size:1.5rem;letter-spacing:.4px}.landscape p>span:first-child{display:block;font-size:2.5rem}.bumber{bottom:0;width:110%;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}.bumber:after,.bumber:before{display:block;width:12px;height:8px;background-color:#efeaea;content:""}.bumber:after{border-radius:10px 10px 10px 0}.bumber:before{border-radius:10px 5px 0 10px}.car,.car .decoration{-webkit-display:flex;-moz-display:flex}.car{animation:.5s ease-in infinite run;background:#ff1f5a;border-radius:30px 30px 8px 8px;width:120px;height:80px;position:relative;display:flex;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;transform:skewX(-5deg)}.car:before{content:"";bottom:0;border-radius:50px;display:block;background-color:#000;width:105%;height:5px}.car:after{content:"";bottom:30%;right:30%;height:2px;width:10px;display:block;background-color:#ece8d9}.car .music{right:0;z-index:3}.car .music .note{color:#fff;animation:3s linear infinite music}.car .music .note.delay-1{animation-delay:1s}.car .music .note.delay-2{animation-delay:2s}.car .music .note.delay-3{animation-delay:3s}.car .decoration{width:100%;height:60%;background-color:#edf9fc;border-radius:16px 20px 0 0;display:flex;-webkit-justify-content:flex-end;-moz-justify-content:flex-end;justify-content:flex-end;-webkit-align-items:center;-moz-align-items:center;align-items:center;overflow:hidden}.car .decoration .doors{height:60%;width:96%;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:space-around;-moz-justify-content:space-around;justify-content:space-around;position:relative;top:6px}.car .decoration .doors .door{display:block;width:50%;height:100%;position:relative;background-color:#0839d6;border-radius:8px 8px 4px 4px;margin:0 2px;overflow:hidden;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:flex-end;-moz-justify-content:flex-end;justify-content:flex-end}.car .decoration .doors .door:after{content:"";display:block;width:25%;height:100%;background:rgba(255,255,255,.5);margin-left:2px}.car .decoration .doors .door:before{content:"";display:block;width:4%;height:100%;background:rgba(255,255,255,.5)}.car .decoration .doors .door.cabin{border-radius:8px 0 0 4px;margin-right:0;width:100px}.car .light{width:4px;height:8px;border-radius:100px;background:#fff;right:2px;bottom:20px}.car .wheels-group{-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:space-around;-moz-justify-content:space-around;justify-content:space-around;position:absolute;width:100%;bottom:0}.car .wheels-group .wheel,.mountains{-webkit-display:flex;-moz-display:flex}.car .wheels-group .wheel{width:40px;height:20px;background-color:#000;animation:.5s ease-in infinite wheel-scale;display:flex;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;-webkit-align-items:flex-end;-moz-align-items:flex-end;align-items:flex-end;border-radius:100px 100px 0 0}.car .wheels-group .wheel:before{content:"";position:relative;display:block;width:32px;height:32px;background-color:#45315d;border-radius:100px;top:80%}.car .wheels-group .wheel:after{width:22px;height:22px;border-radius:100px;background-color:#edf9fc;content:"";position:absolute;top:48%;border:6px solid #312046;box-sizing:border-box}.mountains{position:absolute;width:100%;z-index:1;bottom:-30px;display:flex;-webkit-justify-content:space-around;-moz-justify-content:space-around;justify-content:space-around}.mountains .mountain{background:#2c3adb;animation:10s ease-in infinite mountain-run;position:relative;right:9999px;transform:rotate(45deg);width:50px;height:50px}.wrapper:after,.wrapper:before{content:"";height:2px;position:absolute;bottom:-20px}.wrapper{width:18vw;-webkit-display:flex;-moz-display:flex;display:flex;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;position:relative}.wrapper:after{width:100%;background-color:#45315d}.wrapper:before{width:10px;background-color:#fff;animation:.5s ease-in infinite road-run;z-index:2}@keyframes run{0%,100%{top:0}50%{top:4px}}@keyframes wheel-scale{0%,100%{transform:scaleX(.7)}50%{transform:scaleX(.9);height:20px}}@keyframes mountain-run{0%{right:0}100%{right:100%}}@keyframes road-run{0%{right:0}100%{right:100%}}@keyframes music{0%{font-size:.5rem;opacity:0}50%{opacity:1;margin-top:-50px}100%{margin-top:-50px;margin-left:-100px;font-size:1rem;opacity:0}}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" onclick="window.location.reload()">
+      <div class="car">
+        <div class="music">
+          <div class="note delay-1">♬</div>
+          <div class="note delay-2">♪</div>
+          <div class="note delay-3">♫</div>
+        </div>
+        <div class="decoration">
+          <div class="doors">
+            <div class="door"></div>
+            <div class="door"></div>
+            <div class="door cabin"></div>
+          </div>
+        </div>
+        <div class="light"> </div>
+        <div class="bumber"> </div>
+        <div class="wheels-group">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="landscape">
+      <blockquote class="lyric">
+        {{#if onibus}}
+        <p>
+          <span>{{tempo}} minuto<span class="s{{tempo}}">s</span></span> para o ônibus chegar.
+        </p>
+        <script>
+          if ({{tempo}} > 0) {
+            setTimeout(function(){
+               window.location.reload();
+            }, ({{tempo}} * 60000));
+          }
+        </script>
+        {{else}}
+        <p>
+          Sem ônibus a caminho...
+        </p>
+        {{/if}}
+      </blockquote>
+    </div>
+  </body>
+</html>
+<!--
+Criado por Felipe Almeida github.com/falmeidaco
+Créditos do design da página e animação: https://codepen.io/tuanrobo/pen/jeBYNW
+-->
